@@ -1,0 +1,38 @@
+﻿@model WebApplication33333.Models.Siniflar.Anasayfa
+@{
+    ViewBag.Title = "AnasayfaGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4">Ana Sayfa Güncelle</h2>
+<hr />
+
+@using (Html.BeginForm("AnaSayfaGuncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.id)
+    <br />
+    @Html.TextBoxFor(x => x.id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.isim)
+    <br />
+    @Html.TextBoxFor(x => x.isim, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.profil)
+    <br />
+    @Html.TextBoxFor(x => x.profil, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.aciklama)
+    <br />
+    @Html.TextAreaFor(x => x.aciklama, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.unvan)
+    <br />
+    @Html.TextBoxFor(x => x.unvan, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.iletisim)
+    <br />
+    @Html.TextBoxFor(x => x.iletisim, new { @class = "form-control" })
+    <br />
+    <br />
+    <button class="btn btn-success">Ana sayfaya Güncelle</button>
+}
