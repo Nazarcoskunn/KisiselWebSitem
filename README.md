@@ -6,3 +6,8 @@
 
 <h1>Projeden Görüntüler</h1>
 
+<h2>Anasayfa</h2>
+
+![proje-anasayfa](https://github.com/user-attachments/assets/e82c10fc-cd6a-44a2-b257-62d3c4ba54f1)
+
+<h2>Admin Login Sayfası</h2>
